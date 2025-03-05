@@ -1,0 +1,129 @@
+article.container#servicos-section {
+  background-color: var(--color-6);
+  box-shadow: -200px 0px 0px var(--color-6), 200px 0px 0px var(--color-6);
+}
+
+.servico {
+  padding: 120px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.servico h2 {
+  align-self: left;
+  width: 100%;
+  margin-bottom: 40px;
+}
+
+.cards-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  width: 100%;
+  gap: 20px;
+}
+
+.cards-container li {
+  min-width: 280px;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.img-container {
+  position: relative;
+  border-radius: 5px 5px 0 0;
+  overflow: hidden;
+}
+
+.cards-container li img {
+  border-radius: 5px 5px 0px 0px;
+  height: 480px;
+  max-width: 100%;
+  object-fit: cover;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.cards-container li .img-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.cards-container li:hover .img-overlay {
+  opacity: 1;
+}
+
+.cards-container li .descricao {
+  position: absolute;
+  top: 25%;
+  left: 40%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  z-index: 2;
+  max-width: 80%;
+  color: var(--color-0);
+}
+.cards-container li:hover .descricao {
+  opacity: 1;
+}
+
+.cards-container li h3 {
+  background-color: var(--color-0);
+  color: var(--color-6);
+  padding: 32px 24px;
+  border-radius: 0px 0px 5px 5px;
+  position: relative; 
+  z-index: 3;
+}
+
+#mais-opcoes {
+  padding-left: 80px;
+  padding-right: 80px;
+  margin-top: 60px;
+}
+
+@media (max-width: 800px) {
+  .servico h2 {
+    padding-left: 20px;
+  }
+  .cards-container {
+    display: flex;
+    gap: 20px;
+    padding: 0 20px 20px 20px;
+    max-width: 1400px;
+    margin-right: auto;
+    margin-left: auto;
+    overflow-x: auto;
+  }
+  .cards-container li .img-overlay,
+  .cards-container li:hover .descricao{
+    visibility: hidden;
+  }
+
+  .servico {
+    padding: 40px 0;
+  }
+
+  .cards-container li img {
+    height: 280px;
+  }
+
+  .cards-container li h3 {
+    padding: 16px 12px;
+  }
+
+  #mais-opcoes {
+    padding-left: 40px;
+    padding-right: 40px;
+    margin-top: 20px;
+  }
+}

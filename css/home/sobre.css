@@ -1,0 +1,20 @@
+.sobre-conteudo {
+  display: flex;
+  padding: 120px 0;
+  gap: 40px;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+}
+
+.sobre-conteudo p {
+  max-width: 960px;
+}
+
+@media (max-width: 800px) {
+  .sobre-conteudo {
+    padding: 40px 8px;
+    gap: 20px;
+  }
+
+}

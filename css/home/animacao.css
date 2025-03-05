@@ -1,0 +1,26 @@
+.js .fadeInDown {
+  transform: translate3d(0, -20px, 0);
+}
+.js .fadeInUp {
+  transform: translate3d(0, 20px, 0);
+}
+
+.js [data-anime] {
+  opacity: 0;
+}
+.js .anime {
+  opacity: 1;
+  transform: none;
+  transition: transform 0.6s, opacity 0.6s;
+}
+
+[data-scroll] {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+[data-scroll].active {
+  opacity: 1;
+  transform: translateY(0);
+}

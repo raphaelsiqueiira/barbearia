@@ -1,0 +1,88 @@
+.container {
+  box-sizing: border-box;
+  max-width: 1600px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.botao {
+  display: inline-block;
+  padding: 20px 36px;
+  background: linear-gradient(var(--color-p0), var(--color-p1));
+  border-radius: 4px;
+  box-shadow: 2px 2px 4px #a503008c;
+  text-transform: uppercase;
+  color: var(--color-1);
+  font: 500 1.3rem/1.35 "Bebas Neue", serif;
+  letter-spacing: 2px;
+  max-width: max-content;
+  border: none;
+  cursor: pointer;
+  transition: ease 200ms;
+}
+
+.botao:hover {
+  background: linear-gradient(var(--color-p1), var(--color-p2));
+}
+
+.botao#fixed-btn {
+  position: fixed;
+  top: 50%;
+  right: 0;
+  padding: 16px 24px;
+  transition: transform 0.2s ease-in-out;
+  z-index: 1000;
+}
+
+#fixed-btn:hover {
+  transform: scale(1.1);
+}
+
+#whatsapp-icon {
+  position: fixed;
+  bottom: 10vh;
+  right: 10vh;
+  width: 60px;
+  height: 60px;
+  z-index: 1000;
+}
+
+#whatsapp-icon img {
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s ease-in-out;
+}
+
+#whatsapp-icon img:hover {
+  transform: scale(1.1);
+}
+
+@media (max-width: 600px) {
+  .botao {
+    padding: 12px 16px;
+    font-size: 1rem;
+  }
+  .botao#fixed-btn {
+    top: 75vh;
+    padding: 8px 12px;
+  }
+
+  #whatsapp-icon {
+    bottom: 10vh;
+    right: 12px;
+    width: 40px;
+    height: 40px;
+  }
+
+  #whatsapp-icon img {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s ease-in-out;
+  }
+}

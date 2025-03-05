@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Barbearia Design</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Belanosima:wght@400;600;700&display=swap" rel="stylesheet" />
+
+    <script>
+      document.documentElement.classList.add("js");
+    </script>
+  </head>
+  <body>
+    <header class="header-bg">
+      <div class="header container">
+        <a href="./">
+          <img src="assets/Barbearia.svg" alt="Marcao Barbearia" width="121" height="26" />
+        </a>
+        <nav aria-label="Menu principal">
+          <ul class="header-menu font-2-l cor-0">
+            <li class="item-nav nav-link"><a href="#home-section">Home</a></li>
+            <li class="item-nav nav-link"><a href="#sobre-section">Sobre</a></li>
+            <li class="item-nav nav-link"><a href="#servicos-section">Serviços</a></li>
+            <li class="item-nav nav-link"><a href="#contato-section">Contato e Localização</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main class="introducao-bg" id="home-section" data-scroll>
+      <div class="introducao container">
+        <div class="introducao-conteudo">
+          <h1 class="font-1-xxl cor-0 fadeInDown" data-anime="200">O corte perfeito para o seu estilo!</h1>
+          <p class="font-1-l cor-0 fadeInDown" data-anime="400">Barba, cabelo e um atendimento de primeira.</p>
+          <a href="#" class="botao fadeInDown" data-anime="600">Agende Agora</a>
+          <a href="#" class="botao" id="fixed-btn">Agende seu horário</a>
+          <a href="#" id="whatsapp-icon" target="_blank">
+            <img src="assets/whatsapp.svg" alt="WhatsApp" />
+          </a>
+        </div>
+      </div>
+    </main>
+    <article class="container fadeInUp" id="sobre-section " data-anime="600">
+      <div class="sobre-conteudo">
+        <h2 class="font-1-xxl cor-3">Sobre nós</h2>
+        <p class="font-1-l cor-3">
+          Bem-vindo à <span class="cor-p1">[Nome da Barbearia]</span>! Sou <span class="cor-p1">[Seu Nome]</span>, apaixonado pela arte da barbearia e comprometido em oferecer um serviço de qualidade. Aqui, cada cliente
+          é único e nossa missão é proporcionar um atendimento personalizado, com cortes e cuidados que elevam sua autoestima. Venha viver a experiência de um ambiente acolhedor e inovador.
+        </p>
+      </div>
+    </article>
+    <article class="container" id="servicos-section" data-scroll>
+      <div class="servico">
+        <h2 class="font-1-xxl cor-0">Serviços</h2>
+        <ul class="cards-container">
+          <li>
+            <div class="img-container">
+              <img src="assets/corte.jpg" alt="Barbeiro cortando o cabelo de um cliente em um salão" width="640" height="960" />
+              <div class="img-overlay"></div>
+              <p class="descricao font-2-l">Corte perfeito, estilo impecável. Porque você merece mais do que um simples corte.</p>
+            </div>
+            <h3 class="font-2-l">Corte Masculino</h3>
+          </li>
+          <li>
+            <div class="img-container">
+              <img src="assets/barba.jpg" alt="Homem aparando a barba com uma tesoura em uma barbearia" width="640" height="964" />
+              <div class="img-overlay"></div>
+              <p class="descricao font-2-l">Corte, Desenho e cuidado para uma barba de respeito!</p>
+            </div>
+            <h3 class="font-2-l">Barba</h3>
+          </li>
+          <li>
+            <div class="img-container">
+              <img src="assets/sobrancelha.jpg" alt="Barbeiro aparando e modelando a sobrancelha de um cliente com precisão" width="640" height="480" />
+              <div class="img-overlay"></div>
+              <p class="descricao font-2-l">Detalhes que fazem a diferença no seu visual.</p>
+            </div>
+            <h3 class="font-2-l">sobrancelha</h3>
+          </li>
+          <li>
+            <div class="img-container">
+              <img src="assets/coloracao.jpg" alt="Cabeleireiro aplicando coloração no cabelo de um cliente" width="640" height="427" />
+              <div class="img-overlay"></div>
+              <p class="descricao font-2-l">Realce sua personalidade com uma coloração de alto nível.</p>
+            </div>
+            <h3 class="font-2-l">Coloração</h3>
+          </li>
+          <li>
+            <div class="img-container">
+              <img src="assets/pezinho.jpg" alt="Barbeiro finalizando o corte com um acabamento no pezinho" width="640" height="960" />
+              <div class="img-overlay"></div>
+              <p class="descricao font-2-l">Pezinho na régua para um visual sempre alinhado!</p>
+            </div>
+            <h3 class="font-2-l">Pezinho</h3>
+          </li>
+          <li>
+            <div class="img-container">
+              <img src="assets/selagem.jpg" alt="Profissional aplicando selagem para tratamento capilar" width="640" height="427" />
+              <div class="img-overlay"></div>
+              <p class="descricao font-2-l">Transforme seu cabelo com um tratamento de alto nível!</p>
+            </div>
+            <h3 class="font-2-l">Selagem</h3>
+          </li>
+        </ul>
+        <a href="#" class="botao" id="mais-opcoes">Mostrar mais serviços</a>
+      </div>
+    </article>
+
+    <article class="container" id="contato-section" data-scroll>
+      <h2 class="font-1-xxl cor-0">localização</h2>
+
+      <div class="localizacao-conteudo">
+        <div class="localizacao-img-container"></div>
+        <div class="lojas-conteudo">
+          <h3 class="font-2-xl cor-6">Barbearia</h3>
+          <div class="dados-container">
+            <div class="lojas-dados font-1-s cor-4">
+              <p>Rua Ali Perto, 25</p>
+              <p>Goiania - GO</p>
+            </div>
+            <div class="lojas-dados font-1-s cor-4">
+              <a href="mailto:rj@bikcraft.com">email@loja.com</a>
+              <a href="tel:+552199999999">+55 62 9999-9999</a>
+            </div>
+            <div class="tempo-container">
+              <p class="lojas-tempo font-1-s"><img src="assets/horario.svg" alt="" />08-18h de seg à sexta</p>
+              <p class="lojas-tempo font-1-s"><img src="assets/horario.svg" alt="" />08-14h aos sábados</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a href="#" class="botao font-2-s" id="agende-agora">Agende seu horário agora</a>
+    </article>
+
+    <footer class="footer-bg">
+      <div class="footer container">
+        <img src="assets/Barbearia.svg" width="121" height="26" alt="Bikcraft" />
+        <div class="footer-contato">
+          <h3 class="font-2-l-b cor-1">Contato</h3>
+          <ul class="font-1-m cor-4">
+            <li><a href="tel:+552199999999">+55 62 9999-9999</a></li>
+            <li><a href="mailto:contato@bikcraft.com">email@gmail.com</a></li>
+            <li>Rua Ali Perto, 42 - Botafogo</li>
+            <li>Goiania - GO</li>
+          </ul>
+          <div class="footer-redes">
+            <a href="./">
+              <img src="/assets/icon-instagram.svg" width="32" height="32" alt="Instagram" />
+            </a>
+            <a href="./">
+              <img src="assets/icon-facebook.svg" width="32" height="32" alt="Facebook" />
+            </a>
+            <a href="./">
+              <img src="assets/icon-youtube.svg" width="32" height="32" alt="Youtube" />
+            </a>
+          </div>
+        </div>
+        <div class="footer-informacoes">
+          <h3 class="font-2-l-b cor-1">Informações</h3>
+          <nav>
+            <ul class="font-1-m cor-4">
+              <li><a href="#home-section">Home</a></li>
+              <li><a href="#sobre-section">Sobre</a></li>
+              <li><a href="#servicos-section">Serviços</a></li>
+              <li><a href="#contato-section">Contato e Localização</a></li>
+            </ul>
+          </nav>
+        </div>
+        <p class="footer-copy font-2-m cor-5">Barbearia © Alguns direitos reservados.</p>
+      </div>
+    </footer>
+    <script src="js/simpleAnime.js"></script>
+    <script src="js/scroolAnimation.js"></script>
+  </body>
+</html>

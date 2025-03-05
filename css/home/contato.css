@@ -1,0 +1,116 @@
+#contato-section {
+  background-color: var(--color-5);
+  padding: 120px 0;
+  box-shadow: -200px 0px 0px var(--color-5), 200px 0px 0px var(--color-5);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#contato-section h2 {
+  align-self: left;
+  width: 100%;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.localizacao-conteudo {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background-color: var(--color-w);
+}
+
+.lojas-conteudo {
+  padding: 60px 32px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  color: var(--color-3);
+}
+
+.localizacao-img-container {
+  background: url("/assets/mapa.svg") center/cover no-repeat;
+  height: 400px;
+}
+
+.dados-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
+}
+
+.lojas-conteudo h3,
+.lojas-tempo {
+  grid-column: 1/-1;
+}
+
+.lojas-dados {
+  display: grid;
+  flex-direction: column;
+  gap: 8px;
+  border-left: 2px solid var(--color-3);
+  padding-left: 12px;
+}
+
+.lojas-tempo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 8px;
+}
+
+a#agende-agora {
+  background: transparent;
+  border-bottom: 2px solid var(--color-w);
+  box-shadow: none;
+  color: var(--color-w);
+  margin-top: 40px;
+  padding: 15px 28px;
+  border-radius: 0;
+  transition: ease-in-out 0.3s;
+}
+
+a#agende-agora:hover {
+  color: var(--color-3);
+  border-bottom: 2px solid var(--color-3);
+  transition: ease-in-out 0.3s;
+}
+
+@media (max-width: 800px) {
+  #contato-section {
+    padding: 60px 5%;
+  }
+
+  #contato-section h2 {
+    margin-bottom: 32px;
+  }
+
+  .localizacao-img-container {
+    background: url("/assets/mapa.svg") center/cover no-repeat;
+    height: 240px;
+  }
+
+  .localizacao-conteudo {
+    grid-template-columns: 1fr;
+  }
+
+  .lojas-conteudo {
+    grid-template-columns: 1fr;
+  }
+
+  .dados-container {
+    grid-template-columns: 1fr;
+  }
+
+  .lojas-dados {
+    border-left: none;
+    border-top: 2px solid var(--color-3);
+    padding-left: 0;
+    padding-top: 8px;
+  }
+
+  a#agende-agora {
+    margin-top: 20px;
+    padding: 15px 28px;
+  }
+}
