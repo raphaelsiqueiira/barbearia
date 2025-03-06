@@ -29,7 +29,7 @@
 }
 
 .localizacao-img-container {
-  background: url("/assets/mapa.svg") center/cover no-repeat;
+  background: url("assets/mapa.svg") center/cover no-repeat;
   height: 400px;
 }
 
