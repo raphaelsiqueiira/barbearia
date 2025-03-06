@@ -1,11 +1,12 @@
 #contato-section {
   background-color: var(--color-5);
-  padding: 120px 0;
+  padding: 120px 20px;
   box-shadow: -200px 0px 0px var(--color-5), 200px 0px 0px var(--color-5);
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+   border-radius: 20px; 
 }
 
 #contato-section h2 {
@@ -19,6 +20,8 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   background-color: var(--color-w);
+  border-radius: 5px; 
+  overflow: hidden;
 }
 
 .lojas-conteudo {
@@ -29,7 +32,7 @@
 }
 
 .localizacao-img-container {
-  background: url("assets/mapa.svg") center/cover no-repeat;
+  background: url("/assets/mapa.png") center/cover no-repeat;
   height: 400px;
 }
 
@@ -79,6 +82,9 @@ a#agende-agora:hover {
 @media (max-width: 800px) {
   #contato-section {
     padding: 60px 5%;
+    width: 100vw;
+    max-width: 100%;
+    border-radius: 5px;
   }
 
   #contato-section h2 {
@@ -86,20 +92,23 @@ a#agende-agora:hover {
   }
 
   .localizacao-img-container {
-    background: url("/assets/mapa.svg") center/cover no-repeat;
+    background: url("/assets/mapa.png") center/cover no-repeat;
     height: 240px;
   }
 
   .localizacao-conteudo {
     grid-template-columns: 1fr;
+    width: 100%;
   }
 
   .lojas-conteudo {
     grid-template-columns: 1fr;
+    width: 100%;
   }
 
   .dados-container {
     grid-template-columns: 1fr;
+    width: 100%;
   }
 
   .lojas-dados {
