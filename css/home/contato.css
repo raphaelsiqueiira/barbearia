@@ -32,7 +32,7 @@
 }
 
 .localizacao-img-container {
-  background: url("/assets/mapa.png") center/cover no-repeat;
+  background: url("assets/mapa.png") center/cover no-repeat;
   height: 400px;
 }
 
