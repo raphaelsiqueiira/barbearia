@@ -92,8 +92,8 @@ a#agende-agora:hover {
   }
 
   .localizacao-img-container {
-    background: url("/assets/mapa.png") center/cover no-repeat;
-
+    background: url("../../assets/mapa.png") center/cover no-repeat;
+    border: 1px solid red;
     height: 240px;
   }
 
